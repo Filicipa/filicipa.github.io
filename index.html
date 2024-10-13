@@ -29,16 +29,19 @@
         .section {
             margin-bottom: 40px;
         }
-        .contact-info, .skills, .experience, .education, .languages {
-            list-style-type: none;
-            padding: 0;
+        ul {
+            padding-left: 20px; /* Отступ слева для списка */
         }
-        .skills li, .experience li, .education li, .languages li {
+        ul.skills li, ul.experience li, ul.education li, ul.languages li {
+            list-style-type: disc; /* Стилизация списка — точки */
             margin-bottom: 10px;
         }
         a {
             color: #3498db;
             text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
@@ -47,7 +50,7 @@
         <h1>Alexander Filatov</h1>
         <h3>DevOps Engineer</h3>
         <p>Ukraine, Dnipro</p>
-        <p>Phone: +38(097)7746147 | E-mail: <a href="mailto:filicipa@gmail.com">filicipa@gmail.com</a></p>
+        <p>E-mail: <a href="mailto:filicipa@gmail.com">filicipa@gmail.com</a></p>
         <p>LinkedIn: <a href="https://www.linkedin.com/in/filatov-devops" target="_blank">linkedin.com/in/filatov-devops</a> | GitHub: <a href="https://github.com/Filicipa" target="_blank">github.com/Filicipa</a></p>
 
         <div class="section">
@@ -58,15 +61,16 @@
         <div class="section">
             <h2>Technologies & Technical Skills</h2>
             <ul class="skills">
-                <li>AWS (EC2, VPC, Lambda, RDS, Elasticache, ECS, S3, Amplify, Route53, CloudFormation, IAM)</li>
-                <li>Terraform, Docker, Docker Compose</li>
-                <li>GCP, Digital Ocean</li>
+                <li>AWS (Cloud Practitioner Certification) (EC2, VPC, Lambda, RDS, Elasticache, ECS, S3, Amplify, Route53, CloudFormation, IAM)</li>
+                <li>Digital Ocean, GCP (compute engine, VPC, IAM), Oracle Cloud (VM, VCN, IAM)</li>
+                <li>Terraform</li>
+                <li>Docker, Docker Compose</li>
                 <li>GitHub Actions, GitLab-CI</li>
                 <li>Cloudflare, NameCheap, GoDaddy</li>
-                <li>Databases: MongoDB, Postgres, Redis</li>
-                <li>Monitoring: Prometheus, Grafana, Loki</li>
-                <li>Linux (Ubuntu, CentOS), Virtualization: VirtualBox, Vagrant</li>
+                <li>DB and tools (MongoDB, Postgres, Redis, PGadmin, Studio3T)</li>
+                <li>Monitoring tools (Prometheus, Grafana, Loki, Exporters)</li>
                 <li>Python, Bash scripting</li>
+                <li>Linux (Ubuntu / CentOS)</li>
             </ul>
         </div>
 
